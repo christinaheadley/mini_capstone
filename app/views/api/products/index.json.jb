@@ -1,0 +1,14 @@
+@products.map do |product|
+  {
+    id: product.id,
+    name: product.name,
+    price: product.price,
+    image_url: product.image_url,
+    description: product.description
+  }
+end
+
+# product = {
+#   id: 1
+#   name: "jeans", price: 70, image_path: "https://www.google.com/aclk?sa=l&ai=DChcSEwiZrNqW3JnuAhWs_eMHHXUyDQcYABAPGgJ5bQ&sig=AOD64_2Zjrq2NgLZ_NwtlH6ApAxtthc6qg&adurl&ctype=5&ved=2ahUKEwjkhc2W3JnuAhXBgHIEHcBCC9kQvhd6BQgBEJkB", description: "high rise skinny fit"
+# }
