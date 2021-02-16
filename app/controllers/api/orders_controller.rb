@@ -13,7 +13,7 @@ class Api::OrdersController < ApplicationController
       product_id: params[:product_id],
       user_id: current_user.id
     )
-    @order.subtotal = @order.quantity * @order.product.price
+    @order.subtotal = @order.quantity * @order.product.price #make this part into a loop when changing to multuple items
     @order.tax = @order.subtotal * 0.09
     @order.total = @order.subtotal + @order.tax
     if @order.save

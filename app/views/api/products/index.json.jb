@@ -2,6 +2,8 @@
   render partial: "product.json.jb", locals: { product: product }
 end
 
+#<Product id: 9, name: "cap", price: 0.8e1, description: "fuscia cap", created_at: "2021-01-21 18:25:05", updated_at: "2021-01-22 19:28:40", quantity: 5, supplier_id: 1>
+
 # product = {
 #   id: 1
 #   name: "jeans", price: 70, image_path: "https://www.google.com/aclk?sa=l&ai=DChcSEwiZrNqW3JnuAhWs_eMHHXUyDQcYABAPGgJ5bQ&sig=AOD64_2Zjrq2NgLZ_NwtlH6ApAxtthc6qg&adurl&ctype=5&ved=2ahUKEwjkhc2W3JnuAhXBgHIEHcBCC9kQvhd6BQgBEJkB", description: "high rise skinny fit"

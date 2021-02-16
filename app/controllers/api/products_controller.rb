@@ -1,9 +1,15 @@
 class Api::ProductsController < ApplicationController
   before_action :authenticate_admin, except: [:index, :show]
+  
   def index
-    @products = Product.all(
-      categories: params[:categories]
-    )
+    @products = Product.all
+   
+    # if params[:category]
+    #   @products =    
+    # end
+    # (
+    #   categories: params[:categories]
+    # )
 
       # .title_search(params[:search])
       # .discounted(params[:discount])
@@ -27,6 +33,7 @@ class Api::ProductsController < ApplicationController
 
   def show
     @product = Product.find_by(id: params[:id])
+
     render "show.json.jb"
   end
 
